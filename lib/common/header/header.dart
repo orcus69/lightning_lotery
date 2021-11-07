@@ -31,8 +31,8 @@ class HeaderLogo extends StatelessWidget {
                   style: TextStyle(color: Colors.white, fontSize: 32.0)
                 ),
                 TextSpan(
-                  text: "Lottey",
-                  style: TextStyle(color: Colors.green, fontFamily: 'italic', fontSize: 30.0)
+                  text: "Lottery",
+                  style: TextStyle(color: Colors.yellow[700], fontFamily: 'italic', fontSize: 30.0)
                 )
               ]
             ),
@@ -59,7 +59,7 @@ class HeaderRow extends StatelessWidget {
           cursor: SystemMouseCursors.click,
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.green,
+              color: Colors.yellow[700],
               borderRadius: BorderRadius.circular(8),
             ),
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
