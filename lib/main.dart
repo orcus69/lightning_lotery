@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lightning_lotery/common/examples/examplesSection.dart';
+import 'package:lightning_lotery/common/explanation/explanation.dart';
 import 'package:lightning_lotery/common/header/header.dart';
 import 'package:lightning_lotery/common/carousel/carousel.dart';
 import 'package:lightning_lotery/pages/home.dart';
@@ -124,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ExamplesSection(),
               
-              //body
+              Explanation(),
               
             ],
           ),

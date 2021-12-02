@@ -8,7 +8,7 @@ final List<LightningProcess> lightningProcess = [
   LightningProcess(title: "PAYMENT", imagePath: "money.png", subtitle: "Payments are maded through lightning network"),
   LightningProcess(title: "BITCOIN", imagePath: "bitcoin.png", subtitle: "All rewards are pay in Bitcoin"),
   LightningProcess(title: "FREE", imagePath: "free.png", subtitle: "Play for free and win rewards"),
-  LightningProcess(title: "Lightning Network", imagePath: "free.png", subtitle: "A decentralized network using smart contract functionality in the blockchain of Bitcoin"),
+  LightningProcess(title: "Lightning Network", imagePath: "lightning.png", subtitle: "A decentralized network using smart contract functionality in the blockchain of Bitcoin"),
 ];
 
 class ExamplesSection extends StatelessWidget {
@@ -19,9 +19,9 @@ class ExamplesSection extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: ScreenHelper(
-        desktop: _buildUi(context, 1000),
-        tablet: _buildUi(context, 760),
-        mobile: _buildUi(context, MediaQuery.of(context).size.width * .8),
+        desktop:  _buildUi(context, 1000),
+        tablet:   _buildUi(context, 760),
+        mobile:   _buildUi(context, MediaQuery.of(context).size.width * .8),
       ),
       
     );

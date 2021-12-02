@@ -86,12 +86,20 @@ class Carousel extends StatelessWidget {
   ///Mobile layout
   Widget _buildMobile(BuildContext context, Widget text, Widget side){
     return Container(
+      padding: EdgeInsets.only(top: 16.0),
       constraints: BoxConstraints(
         maxWidth: MediaQuery.of(context).size.height * .8,
       ),
       width: double.infinity,
 
-      child: text,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        
+        children: [
+          Container(child: text),
+          Container(child: side)
+        ],
+      ),
     );
   }
 }

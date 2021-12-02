@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
     var response = await dio.post(
       'http://lightning-lottery.herokuapp.com/apostar',
       data: {
-        "numeros" : "$numbers", 
+        "numeros" : numbers, 
         "email" : email
       },
     );
